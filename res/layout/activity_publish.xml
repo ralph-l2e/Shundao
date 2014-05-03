@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_publish_bg"
+    tools:context=".PublishActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/publish_padding" >
+
+        <!-- 起点 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/publish_a"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:hint="@string/activity_publish_a"
+            android:padding="@dimen/edittext_padding" >
+        </EditText>
+
+        <!-- 终点 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/publish_b"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:hint="@string/activity_publish_b"
+            android:padding="@dimen/edittext_padding" >
+        </EditText>
+
+        <!-- 时段 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/spinner_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/publish_daypart"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:drawableRight="@drawable/spinner_dropdown"
+            android:enabled="false"
+            android:padding="@dimen/edittext_padding" >
+        </EditText>
+
+        <!-- 时间 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/spinner_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/publish_time"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:drawableRight="@drawable/spinner_dropdown"
+            android:enabled="false"
+            android:padding="@dimen/edittext_padding" >
+        </EditText>
+
+        <!-- 车牌型号 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/spinner_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/publish_brand"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:drawableRight="@drawable/spinner_dropdown"
+            android:enabled="false"
+            android:hint="@string/activity_publish_brand"
+            android:padding="@dimen/edittext_padding" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 座位 -->
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+                android:layout_weight="0.8"
+                android:background="@drawable/spinner_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/publish_seat"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/spinner_dropdown"
+                android:enabled="false"
+                android:hint="@string/activity_publish_seat"
+                android:padding="@dimen/edittext_padding" >
+            </EditText>
+
+            <!-- 每位价格 -->
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+                android:layout_marginLeft="@dimen/edittext_padding"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_bg"
+                android:clickable="true"
+                android:drawableLeft="@drawable/publish_price"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/spinner_dropdown"
+                android:enabled="false"
+                android:hint="@string/activity_publish_price"
+                android:padding="@dimen/edittext_padding" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- 附加信息 -->
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/publish_entry_margin_bottom"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/publish_add"
+            android:drawablePadding="@dimen/edittext_drawable_padding"
+            android:gravity="left|top"
+            android:hint="@string/activity_publish_add"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:padding="@dimen/edittext_padding" />
+    </TableLayout>
+
+</ScrollView>

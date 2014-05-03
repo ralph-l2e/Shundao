@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg_repeat"
+    android:orientation="vertical"
+    tools:context=".IndexFragment" >
+
+    <!-- 搜索框 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:padding="15dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_box"
+                android:padding="@dimen/edittext_padding"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/searchbox_bg"
+                android:drawableLeft="@drawable/searchbox_icon"
+                android:ems="10"
+                android:text="@string/search_box_hint"
+                android:textColor="@color/white" >
+
+                <requestFocus />
+            </EditText>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/searchbox_icon_more"
+                android:layout_alignRight="@id/search_box"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/edittext_padding"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/menu_left_logo" />
+    </FrameLayout>
+
+    <!-- 导航条目 -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <!-- 条目分界线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_bottom" />
+
+        <!-- 首页 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding" >
+
+            <TextView
+                android:id="@+id/intent_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/intent_home_icon"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/menu_more_icon"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:text="@string/intent_home"
+                android:textColor="@color/menu_intent_unselected" />
+        </LinearLayout>
+        <!-- 条目分界线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_bottom" />
+
+        <!-- 发布 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding" >
+
+            <TextView
+                android:id="@+id/intent_publish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/intent_publish_icon"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/menu_more_icon"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:text="@string/intent_publish"
+                android:textColor="@color/menu_intent_unselected" />
+        </LinearLayout>
+
+        <!-- 条目分界线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_bottom" />
+
+        <!-- 我有车 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding" >
+
+            <TextView
+                android:id="@+id/intent_havecar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/intent_havecar_icon"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/menu_more_icon"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:text="@string/intent_havecar"
+                android:textColor="@color/menu_intent_unselected" />
+        </LinearLayout>
+
+        <!-- 条目分界线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_bottom" />
+
+        <!-- 求车 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding" >
+
+            <TextView
+                android:id="@+id/intent_findcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/intent_findcar_icon"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:drawableRight="@drawable/menu_more_icon"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:text="@string/intent_findcar"
+                android:textColor="@color/menu_intent_unselected" />
+        </LinearLayout>
+
+        <!-- 条目分界线 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_top" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/separate_line_bottom" />
+
+        <!-- 关于 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/row_padding" >
+
+            <TextView
+                android:id="@+id/intent_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableLeft="@drawable/intent_about_icon"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:text="@string/about"
+                android:textColor="@color/menu_intent_unselected" />
+        </LinearLayout>
+    </TableLayout>
+
+</LinearLayout>

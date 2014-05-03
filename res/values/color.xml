@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="separate_line_top">#141414</color>
+    <color name="separate_line_bottom">#353535</color>
+    <color name="menu_intent_unselected">#afafaf</color>
+    <color name="menu_intent_selected">#FFFFFF</color>
+    <color name="menu_right_nickname">#05ade3</color>
+    <color name="menu_right_subtitle_bg">#242424</color>
+    <color name="activity_main_bg">#4a728b</color>
+    <color name="route_card_nickname">#141414</color>
+    <color name="route_card_a">#434343</color>
+    <color name="route_card_time">#8a837e</color>
+    <color name="route_card_b">#8a837e</color>
+    <color name="activity_publish_bg">#b6d1de</color>
+    <color name="spinner_gradient_start">#fcfcfc</color>
+    <color name="spinner_gradient_end">#e1e1e1</color>
+    <color name="spinner_border">#afafaf</color>
+    <color name="edittext_border">#afafaf</color>
+    <color name="comment_card_nickname">#05ade3</color>
+    <color name="comment_card_time">#b6b7b8</color>
+    <color name="comment_card_content">#717171</color>
+    <color name="comment_card_separate_line_top">#717171</color>
+    <color name="comment_card_separate_line_bottom">#ffffff</color>
+
+</resources>

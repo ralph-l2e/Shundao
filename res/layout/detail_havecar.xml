@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/detail_havecar_time_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_bg"
+        android:padding="@dimen/edittext_padding"
+        android:text="发布于2012-12-17 15:30\t\t来自Android客户端" />
+
+    <TableRow android:padding="@dimen/row_padding" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/route_detail_avatar"
+                android:layout_width="@dimen/avatar_width"
+                android:layout_height="@dimen/avatar_height"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_men" />
+
+            <TextView
+                android:id="@+id/route_detail_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="用户名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/detail_havecar_sign" />
+
+            <TextView
+                android:id="@+id/route_detail_daypart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作日（周一至周六）" />
+
+            <TextView
+                android:id="@+id/route_detail_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆信息：大众 辉腾" />
+
+            <TextView
+                android:id="@+id/route_detail_seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可乘坐剩余座位：3" />
+        </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_line_bottom" />
+
+    <TableRow android:padding="@dimen/row_padding" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/route_detail_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/havecar_icon_a"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:gravity="center"
+                android:text="起点  北京市海淀区请河南镇" />
+
+            <TextView
+                android:id="@+id/route_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/havecar_icon_time"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:gravity="center"
+                android:text="10点左右出发" />
+
+            <TextView
+                android:id="@+id/route_detail_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/havecar_icon_b"
+                android:drawablePadding="@dimen/edittext_drawable_padding"
+                android:gravity="center"
+                android:text="终点  北京市海淀区请河南镇" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/call" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/send" />
+        </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_line_bottom" />
+
+    <TableRow android:padding="@dimen/row_padding" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/havecar_icon_add" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/route_detail_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:padding="@dimen/row_padding"
+        android:text="终点  北京市海淀区请河南镇终点  北京市海淀区请河南镇终点  北京市海淀区请河南镇终点  北京市海淀区请河南镇终点  北京市海淀区请河南镇" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separate_line_bottom" />
+
+    <TextView
+        android:id="@+id/route_detail_comment_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/havecar_comment"
+        android:drawablePadding="@dimen/edittext_drawable_padding"
+        android:padding="@dimen/row_padding"
+        android:text="共15条留言" />
+
+</TableLayout>

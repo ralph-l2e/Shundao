@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="actionbar_padding">5dp</dimen>
+    <dimen name="edittext_padding">5dp</dimen>
+    <dimen name="edittext_drawable_padding">3dp</dimen>
+    <dimen name="row_padding">5dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sidemenu_offset">80dp</dimen>
+    <dimen name="avatar_width">48dp</dimen>
+    <dimen name="avatar_height">48dp</dimen>
+    <dimen name="publish_padding">20dp</dimen>
+    <dimen name="publish_entry_margin_bottom">10dp</dimen>
+    <dimen name="spinner_border">1dp</dimen>
+    <dimen name="edittext_border">1dp</dimen>
+    <dimen name="corners_radius">10dp</dimen>
+    <dimen name="route_card_pading_left">5dp</dimen>
+    <dimen name="route_card_pading_right">5dp</dimen>
+    <dimen name="route_card_pading_top">3dp</dimen>
+    <dimen name="route_card_pading_bottom">3dp</dimen>
+    <dimen name="route_card_hegight">75dp</dimen>
+    <dimen name="route_card_text_margin_top">3dp</dimen>
+    <dimen name="route_card_text_margin_left">44dp</dimen>
+    <dimen name="comment_card_pading_left">5dp</dimen>
+    <dimen name="comment_card_pading_right">5dp</dimen>
+    <dimen name="comment_card_pading_top">3dp</dimen>
+    <dimen name="comment_card_pading_bottom">3dp</dimen>
+    <dimen name="slidingmenu_offset">70dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">35dp</dimen>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:drawable="@drawable/havecar_info_bg" Android:state_enabled="true"/>
+    <item Android:drawable="@drawable/havecar_info_bg_press" Android:state_pressed="true"/>
+
+</selector>

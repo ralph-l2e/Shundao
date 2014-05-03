@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mobile_hint">手机号</string>
+    <string name="nickname_hint">昵称</string>
+    <string name="psd_hint">密码</string>
+    <string name="psd_confirm_hint">密码确认</string>
+    <string name="sex_hint">性别</string>
+    <string name="type_hint">身份</string>
+    <string name="signup_button">确认注册</string>
+    
+</resources>

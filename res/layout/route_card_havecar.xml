@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/route_card_hegight"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/route_card_pading_bottom"
+    android:paddingLeft="@dimen/route_card_pading_left"
+    android:paddingRight="@dimen/route_card_pading_right"
+    android:paddingTop="@dimen/route_card_pading_top" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/route_card_avatar"
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_men" />
+
+        <TextView
+            android:id="@+id/route_card_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxWidth="@dimen/avatar_width"
+            android:textColor="@color/route_card_nickname" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/route_card_havecar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/havecar_card_button_bg" >
+
+        <TextView
+            android:id="@+id/route_card_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/route_card_text_margin_left"
+            android:layout_marginTop="@dimen/route_card_text_margin_top"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/route_card_a" />
+
+        <TextView
+            android:id="@+id/route_card_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/route_card_start"
+            android:layout_below="@id/route_card_start"
+            android:layout_marginTop="@dimen/route_card_text_margin_top"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/route_card_time" />
+
+        <TextView
+            android:id="@+id/route_card_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/route_card_start"
+            android:layout_below="@id/route_card_time"
+            android:layout_marginTop="@dimen/route_card_text_margin_top"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/route_card_b" />
+    </RelativeLayout>
+
+</LinearLayout>

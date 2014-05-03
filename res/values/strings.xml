@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">顺道儿</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_box_hint">搜索</string>
+    <string name="intent_home">首页</string>
+    <string name="intent_publish">发布</string>
+    <string name="intent_havecar">我有车</string>
+    <string name="intent_findcar">求车</string>
+    <string name="about">!</string>
+    <string name="avatar">头像</string>
+    <string name="menu_right_title">个人中心</string>
+    <string name="menu_right_information">信息中心</string>
+    <string name="intent_comment">评论留言</string>
+    <string name="intent_havecar_mine">我发的”我有车“信息</string>
+    <string name="intent_findcar_mine">我发的”求车“信息</string>
+    <string name="menu_right_account">账户</string>
+    <string name="intent_user_manager">账户管理</string>
+    <string name="intent_logout">注销</string>
+    <string name="route_card_start">起点：</string>
+    <string name="route_card_time">时间：</string>
+    <string name="route_card_end">终点：</string>
+    <string name="actionbar_publish_back">上一步</string>
+    <string name="actionbar_publish_title">发布信息</string>
+    <string name="actionbar_publish_forward">发布</string>
+    <string name="activity_publish_a">起点</string>
+    <string name="activity_publish_b">终点</string>
+    <string name="activity_publish_brand">汽车品牌 车型</string>
+    <string name="activity_publish_seat">座位</string>
+    <string name="activity_publish_price">每位价格</string>
+    <string name="activity_publish_add">补充信息</string>
+    <string name="actionbar_detail_back">返回</string>
+    <string name="actionbar_detail_title">信息详情</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_route_detail">RouteDetailActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_refreshable">RefreshableActivity</string>
+    <string name="title_activity_signup">注册</string>
+    <string name="title_activity_comment">评论留言</string>
+    <string name="actionbar_comment_back">返回</string>
+    <string name="actionbar_comment_title">信息详情</string>
+    <string name="actionbar_account_back">返回</string>
+    <string name="actionbar_account_title">账户管理</string>
+    <string name="actionbar_signin_title">登录</string>
+    <string name="actionbar_signin_back">返回</string>
+    <string name="actionbar_signin_forward">注册</string>
+        <string name="actionbar_signup_back">返回</string>
+    <string name="actionbar_signup_title">注册</string>
+
+</resources>

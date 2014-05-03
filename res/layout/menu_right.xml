@@ -1,0 +1,262 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_bg_repeat"
+    android:orientation="horizontal"
+    tools:context=".UserFragment" >
+
+    <!-- Top -->
+
+    <TableRow android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="@dimen/avatar_width"
+            android:layout_height="@dimen/avatar_height"
+            android:contentDescription="@string/avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar_men_me" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="用户名"
+            android:textColor="@color/menu_right_nickname" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/menu_right_title"
+            android:textColor="@color/menu_intent_unselected" />
+    </TableRow>
+
+    <!-- 信息中心 -->
+
+    <TableRow
+        android:background="@color/menu_right_subtitle_bg"
+        android:padding="@dimen/row_padding" >
+
+        <TextView android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:text="@string/menu_right_information"
+            android:textColor="@color/menu_intent_unselected" />
+    </TableRow>
+
+    <!-- 评论留言 -->
+
+    <TableRow
+        android:id="@+id/intent_comment"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intent_comment_icon" />
+
+        <TextView
+            android:id="@+id/intent_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/intent_comment_unread_bg"
+            android:gravity="left|center"
+            android:text="@string/intent_comment"
+            android:textColor="@color/menu_intent_unselected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more_icon" />
+    </TableRow>
+
+    <!-- 条目分界线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_top" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_bottom" />
+
+    <!-- 我发的求车信息 -->
+
+    <TableRow
+        android:id="@+id/intent_findcar_mine"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intent_havecar_mine_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/intent_havecar_mine"
+            android:textColor="@color/menu_intent_unselected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more_icon" />
+    </TableRow>
+
+    <!-- 条目分界线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_top" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_bottom" />
+
+    <!-- 我发的我有车车信息 -->
+
+    <TableRow
+        android:id="@+id/intent_havecar_mine"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intent_findcar_mine_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/intent_findcar_mine"
+            android:textColor="@color/menu_intent_unselected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more_icon" />
+    </TableRow>
+
+    <!-- 账户 -->
+
+    <TableRow
+        android:background="@color/menu_right_subtitle_bg"
+        android:padding="@dimen/row_padding" >
+
+        <TextView android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_right_account"
+            android:textColor="@color/menu_intent_unselected" />
+    </TableRow>
+
+    <!-- 账户管理 -->
+
+    <TableRow
+        android:id="@+id/intent_user_manager"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intent_user_manager_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/intent_user_manager"
+            android:textColor="@color/menu_intent_unselected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more_icon" />
+    </TableRow>
+
+    <!-- 条目分界线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_top" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_bottom" />
+
+    <!-- 注销 -->
+
+    <TableRow
+        android:id="@+id/intent_logout"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="@dimen/row_padding" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/intent_logout_icon" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/intent_logout"
+            android:textColor="@color/menu_intent_unselected" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_more_icon" />
+    </TableRow>
+
+    <!-- 条目分界线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_top" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/separate_line_bottom" />
+
+</TableLayout>
