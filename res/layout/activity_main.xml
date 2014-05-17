@@ -1,5 +1,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/route_fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/activity_main_bg"
@@ -7,10 +8,5 @@
     android:orientation="horizontal"
     tools:context=".MainActivity" >
 
-    <fragment
-        android:id="@+id/route_fragment"
-        android:name="com.huahuostudio.sd.fragment.RouteListFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 </LinearLayout>

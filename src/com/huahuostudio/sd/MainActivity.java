@@ -5,8 +5,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-public class MainActivity extends BaseActivity {
+import com.huahuostudio.sd.fragment.RouteListFragment;
 
+public class MainActivity extends BaseActivity {
+	
+	public static final String ROUTE_FILTER_NAME_ROLE = "role";
+	public static final String ROUTE_FILTER_VALUE_PASSENGER = "passenger";
+	public static final String ROUTE_FILTER_VALUE_DRIVER = "driver";
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -17,6 +23,10 @@ public class MainActivity extends BaseActivity {
 		actionBar.setCustomView(R.layout.actionbar_main);
 		actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 		actionBar.setDisplayShowCustomEnabled(true);
+		
+		RouteListFragment fragment = new RouteListFragment();
+		fragment.setArguments(getIntent().getExtras());
+		getSupportFragmentManager().beginTransaction().add(R.id.route_fragment_container, fragment).commit();
 
 		// ×ó²à°´Å¥¿Õ×Å×ó²à²Ëµ¥
 		actionBar.getCustomView().findViewById(R.id.left_area)

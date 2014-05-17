@@ -34,7 +34,8 @@ public class BaseActivity extends FragmentActivity {
 
 	public void onClick(View v) {
 		Intent intent = null;
-
+		Bundle bundle = new Bundle();
+		
 		switch (v.getId()) {
 		case R.id.intent_home:
 			intent = new Intent(BaseActivity.this, MainActivity.class);
@@ -42,11 +43,17 @@ public class BaseActivity extends FragmentActivity {
 		case R.id.intent_publish:
 			intent = new Intent(BaseActivity.this, PublishActivity.class);
 			break;
-		case R.id.intent_findcar:
+		case R.id.intent_findcar://求车
 			intent = new Intent(BaseActivity.this, MainActivity.class);
+			bundle.putString(MainActivity.ROUTE_FILTER_NAME_ROLE,
+					MainActivity.ROUTE_FILTER_VALUE_PASSENGER);
+			intent.putExtras(bundle);
 			break;
-		case R.id.intent_havecar:
+		case R.id.intent_havecar://我有车
 			intent = new Intent(BaseActivity.this, MainActivity.class);
+			bundle.putString(MainActivity.ROUTE_FILTER_NAME_ROLE,
+					MainActivity.ROUTE_FILTER_VALUE_DRIVER);
+			intent.putExtras(bundle);
 			break;
 		case R.id.intent_findcar_mine:
 			intent = new Intent(BaseActivity.this, MainActivity.class);
